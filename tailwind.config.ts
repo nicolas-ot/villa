@@ -7,7 +7,10 @@ const config: Config = {
         './app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
-        extend: {},
+        fontFamily: {
+            "display": ["Raleway Thin", "palatino", "book antiqua", "palatino linotype", "serif"],
+            "raleway": ["raleway", "sans-serif"]
+        }
     },
     plugins: [],
 }

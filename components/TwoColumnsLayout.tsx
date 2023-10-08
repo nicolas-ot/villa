@@ -5,10 +5,10 @@ interface TwoColumnsLayoutProps {
     children: React.ReactNode;
     img: StaticImageData;
     imgOnLeft?: boolean;
-    height?: string;
+    className?: string;
 }
 
-export default function TwoColumnsLayout({children, img, imgOnLeft = false, height}: TwoColumnsLayoutProps) {
+export default function TwoColumnsLayout({children, img, imgOnLeft = false, className}: TwoColumnsLayoutProps) {
     const image = (
         <Image
             className={"w-full h-full"}
@@ -32,7 +32,7 @@ export default function TwoColumnsLayout({children, img, imgOnLeft = false, heig
     );
 
     return (
-        <div className={"flex " + height}>
+        <div className={"flex " + className}>
             <div className={"w-5/12 h-full"}>
                 {leftCol}
             </div>
