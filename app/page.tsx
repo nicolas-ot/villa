@@ -6,6 +6,10 @@ export default function Home() {
             <div className={"bg-transparent w-full bg-fit"}>
                 <Navbar/>
             </div>
+
+            <footer className={"my-12 h-32"}>
+                this is footer
+            </footer>
         </main>
     )
 }
